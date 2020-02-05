@@ -18,6 +18,35 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .counters {
+            margin-right: 30px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .counters strong {
+            display: block;
+            font-size: 2em;
+        }
+        .counters .vote, .counters .answer {
+            width: 60px;
+            height: 60px;
+        }
+        .counters .status.unanswered {
+           border: none;
+        }
+        .counters .status.answered {
+            border: 1px solid rgba(95,187,126);
+            color: rgba(95,187,126);
+        }
+        .counters .status.answered-accepted {
+            background: rgba(95,187,126);
+            color:white;
+        }
+        .counters .view {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
